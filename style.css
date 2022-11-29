@@ -1,0 +1,237 @@
+body {
+  border: 10px solid transparent;
+}
+
+header {
+  background-color: rgb(49, 49, 49);
+  margin: 0;
+  border: 10px solid rgb(49, 49, 49);
+}
+
+footer {
+  background-color: rgb(49, 49, 49);
+  margin: 0;
+  border: 20px solid rgb(49, 49, 49);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+.pagelink,
+.link {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+p {
+  line-height: 150%;
+}
+
+.link {
+  border: 3px solid rgb(84, 84, 84);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover {
+  border: 3px solid rgb(84, 84, 84);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(84, 84, 84);
+}
+
+.butlink {
+  border: 5px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.butlink:hover {
+  border: 5px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgb(220, 220, 220);
+}
+
+.imglang {
+  border: 5px solid transparent;
+}
+
+.logo {
+  border: 5px solid transparent;
+  /* background-color: rgb(0, 177, 190); */
+}
+
+.logo2 {
+  border: 30px solid transparent;
+  /* background-color: rgb(0, 177, 190); */
+}
+
+.buttons {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pages {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1 {
+  border: 30px solid transparent;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: rgb(60, 60, 60);
+}
+
+article {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.pagelink {
+  text-decoration: none;
+}
+
+.pagelink:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: rgb(49, 49, 49);
+  color: aliceblue;
+  border: 5px solid transparent;
+  border-radius: 2px;
+  width: 100%;
+  min-width: 100%;
+}
+
+pre code {
+  display: block;
+  background: rgb(49, 49, 49);
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.back {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.image-round {
+  border-radius: 20px;
+}
+
+.keep-space {
+  white-space: pre-wrap;
+}
+
+right-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+left-logo {
+  display: flex;
+  align-items: flex-start;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Bash</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+
+    <article>
+      <!-- CONTENT BEGIN -->
+      <br />
+      <a href="/lang/bash.html" class="back">Back</a>
+      <h1>Files</h1>
+      <p>We are back in the 'DevKey' folder, AKA the 'root' folder.</p>
+      <h3>Commands you will learn</h3>
+      <ol>
+        <li>
+          <strong>mkdir</strong>
+          : Make a directory
+        </li>
+        <li>
+          <strong>touch</strong>
+          : Create a file
+        </li>
+        <li>
+          <strong>nano</strong>
+          : Edit a file
+        </li>
+      </ol>
+
+      <h3>MKDIR</h3>
+      <p>
+        'mkdir' is a command that creates a folder where you currently are. We
+        use it by typing 'mkdir' and the name you want to give the folder! Let's
+        create a folder called 'Test Folder'
+      </p>
+      <code>mkdir Test Folder</code>
+      <p>
+        Everything seems in order when we run this, but we accidentally made 2
+        seperate folders. We made a folder called 'Test' and 'Folder'. Let's try
+        again:
+      </p>
+      <code>mkdir 'Test Folder'</code>
+      <p>
+        Above is the proper method to make a folder with spaces in it's name.
+        There is another method, but it isn't as easy:
+      </p>
+      <code>mkdir Test\ Folder/</code>
+      <p>
+        I don't reccoment the above method because it requires you to add a
+        backslash every time, but the quotation
+      </p>
+      <h3>TOUCH</h3>
+      <p>
+        Even with its odd name, this command is one of the most usefull commands
+        for quickly creating empty files. Let's say we want to create a file
+        called 'message.txt', we would do it like this:
+      </p>
+      <code>touch message.txt</code>
+      <p>That's it, really!</p>
+      <p>
+        A usefull flag that could prevent mistakes is '-c', it makes sure that
+        when you are creating the file, it won't overwrite another file named
+        exactly the same. Useful!
+      </p>
+      <!-- CONTENT END -->
+    </article>
+
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>

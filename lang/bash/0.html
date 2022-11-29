@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Bash</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+    <article>
+      <!-- ARTICLE -->
+      <br />
+      <a href="/lang/bash.html" class="back">Back</a>
+      <h1>Navigation</h1>
+      <p>
+        To access files in other directories, we need to be able to navigate our
+        filesystem. Once again, below is our filesystem we will use as an
+        example.
+      </p>
+      <img
+        src="/img/bash-filesystem.png"
+        alt="Example Filesystem"
+        width="400"
+        class="image-round"
+      />
+      <p>We are currently in the 'DevKey' folder, AKA the 'root' folder.</p>
+      <h3>Commands you will learn</h3>
+      <ol>
+        <li>
+          <strong>ls</strong>
+          : List stuff
+        </li>
+        <li>
+          <strong>cd</strong>
+          : Change directory
+        </li>
+        <li>
+          <strong>pwd</strong>
+          : Print Working Directory
+        </li>
+      </ol>
+
+      <h3>LS</h3>
+      <p>
+        'ls' is used to list what
+        <i>stuff</i>
+        is in your current directory. We use it like this:
+      </p>
+      <code>ls</code>
+      <p>So, when running that, we get:</p>
+      <code>Apps Documents Photos</code>
+      <p>
+        We know that because the first things that are inside the DevKey folder
+        are:
+      </p>
+      <code>Apps Documents Photos</code>
+      <p>There we go! We managed to do something in the terminal!</p>
+      <p>
+        We can add a
+        <i>flag</i>
+        to our command to change the output. We can add '-a' to the end. Like
+        so:
+      </p>
+      <code>ls -a</code>
+      <p>When running this, we get:</p>
+      <code>. .. .DS_Store Apps Documents Photos</code>
+      <p>
+        This will show all the files in your current directory, but including
+        hidden files, which always start with a '.'
+      </p>
+      <p>
+        The '.' in the result of the command represents the current directory,
+        and the '..' represents the previous directory.
+      </p>
+      <p>That'll be the only flag you'll need to know for now.</p>
+      <br />
+      <h3>CD</h3>
+      <p>
+        'cd' stands for Change Directory, guess what we use it for, changing
+        directories!
+      </p>
+      <p>We know that the subdirectories in our current directory, are:</p>
+      <code>Apps Documents Photos</code>
+      <p>Let's move to the Documents subdirectory.</p>
+      <code>cd Documents</code>
+      <p>When we run that, we'll automatically move to the Documents folder.</p>
+      <p>
+        If we want to move
+        <i>back</i>
+        a directory, we can run:
+      </p>
+      <code>cd ..</code>
+      <p>
+        If we want to move to the
+        <i>root</i>
+        folder, we can run:
+      </p>
+      <code>cd /</code>
+      <br />
+      <h3>PWD</h3>
+      <p>
+        'pwd' is a usefull command that you might need from time to time. It
+        stands for Print Working Directory. When we run it, it will tell us
+        where we are in our filesystem!
+      </p>
+      <code>pwd</code>
+      <p>That will return:</p>
+      <code>/DevKey/Documents</code>
+      <p>Now we know where we are!</p>
+      <br />
+      <h3>OPTIMISATION</h3>
+      <p>
+        If we want to know what is in a subdirectory, but we're not bothered to
+        move into that folder, run ls, then move out of it, we can just run:
+      </p>
+      <code>ls [folder name]</code>
+      <p>
+        Just replace the [folder name] with the name of the folder you want to
+        look inside
+      </p>
+      <!-- ARTICLE -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>

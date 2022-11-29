@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container2">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Python</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+
+    <article>
+      <!-- CONTENT BEGIN -->
+      <br />
+      <a href="/lang/python.html" class="back">Back</a>
+      <h1>Operators</h1>
+      <h2>Comparative operators</h2>
+      <p>
+        Operators help you create code that makes decisions for you. We already
+        know of the ‘=’ operator, we use it to define variables, it’s not used
+        for much more.
+      </p>
+      <p>
+        If we want to check if a variable is equal to another variable, we use
+        the ‘==’ variable, like so:
+      </p>
+      <pre><code>var1 == var2
+</code></pre>
+      <p>
+        This will compare the two, and it’ll return if they are equal or not.
+      </p>
+      <p>Here’s a better way of understanding it:</p>
+      <pre><code>var1 = "Text One"
+var2 = "Text Two"
+print(var1 == var2)
+</code></pre>
+      <p>
+        When running this, we get
+        <code>False</code>
+        , this is because var1 and var2 are
+        <em><strong>not</strong></em>
+        equal.
+      </p>
+      <p>But if we modify the variables like so:</p>
+      <pre><code>var1 = "Text One"
+var2 = "Text One"
+print(var1 == var2)
+</code></pre>
+      <p>
+        And we run it, we get
+        <code>True</code>
+        , this is because both var1 and var2 are the same, value wise.
+      </p>
+      <p>
+        Similarly, the operator “!=” does the complete opposite, when two
+        variables are
+        <strong>
+          <strong>
+            <strong><strong>different</strong></strong>
+          </strong>
+        </strong>
+        , it will return True, but when they are the same, it’ll return
+        <em>
+          <strong><strong>False</strong></strong>
+        </em>
+        .
+      </p>
+      <p>Let’s quickly go through the rest:</p>
+      <p>
+        When we want to check if a variable is smaller or larger than the other,
+        we can use “&lt;” or “&gt;”. Like so:
+      </p>
+      <pre><code>print(5 &lt; 10) # This will return True
+print(5 &lt; 0) # This will return False
+print(5 &gt; 10) # This will return False
+print(5 &gt; 0) # This will return True
+</code></pre>
+      <p>Similarly, we can also use “&gt;=” or “&lt;=”. Which will do this:</p>
+      <pre><code>print(5 &lt;= 10) # This will return True
+print(10 &lt;= 10) # This will return True
+print(15 &lt;= 10) # This will return False
+print(5 &gt;= 10) # This will return False
+print(10 &gt;= 10) # This will return True
+print(15 &gt;= 10) # This will return True
+</code></pre>
+      <p>OK next,</p>
+      <p>We can do basic math too, like so:</p>
+      <pre><code>print(5+5) # + : This is addition
+print(10-5) # - : This is substraction
+print(5*5) # * : This is multiplication
+print(5/5) # / : This is division ( It will return the remainders )
+print(5//5) # // : This is division ( It will not return the remainders )
+print(5%5) # % : This will do a "/" style division and return the remainder
+print(5**5) # ** : This will calculate the first number
+</code></pre>
+      <p>Below is a simple script, predict the outcome of it:</p>
+      <pre><code>variable = 5
+variable + 5
+print(variable)
+</code></pre>
+      <p>
+        You might think the output is 10, because 5 + 5 is 10, which is true,
+        but it’ll return 5.
+      </p>
+      <p>Let me explain why.</p>
+      <p>
+        Python runs a script line by line, so it’ll run “variable = 5” first,
+        which stores the variable and its content.
+      </p>
+      <p>
+        Then it’ll run “variable + 5”, which will get the contents of the
+        variable named “variable” and add 5, but it wont actually add 5 to the
+        variable, it’ll just calculate it. To solve this we could change the
+        script to this:
+      </p>
+      <pre><code>variable = 5
+variable = variable + 5
+print(variable)
+</code></pre>
+      <p>But that’s long, and we want to be fast, so we can do this:</p>
+      <pre><code>variable = 5
+variable += 5
+print(variable)
+</code></pre>
+      <p>
+        By using “+=”, we can tell Python to just calculate and directly save
+        the output to the variable.
+      </p>
+      <p>This is also applicable to subtraction too, like so:</p>
+      <pre><code>print(num+=5) # + : This is addition
+print(num-=5) # - : This is substraction
+</code></pre>
+      <h2>Ternary Operators</h2>
+      <p>
+        Ternary Operators are super useful in Python, they let you create
+        conditional outputs in one line.
+      </p>
+      <p>
+        This is the syntax:
+        <code>[on_true] if [expression] else [on_false]</code>
+      </p>
+      <p>
+        The
+        <code>[on_true]</code>
+        variable represents the output when the
+        <code>[expression]</code>
+        is True, but the
+        <code>[on_false]</code>
+        variable represents the output if the
+        <code>[expression]</code>
+        is False.
+      </p>
+      <p>
+        So let’s say we want to get an output of “Yes” when our expression is
+        True, and an output of “No” when our expression is False.
+      </p>
+      <p>We would do this:</p>
+      <pre><code>print('Yes' if [expression] else 'No')
+</code></pre>
+      <p>
+        Now, we need to decide what our expression is, but it
+        <em>
+          <strong><strong>has</strong></strong>
+        </em>
+        to have an output of True or False. Let’s use the
+        <code>==</code>
+        operator to compare 5 to 5.
+      </p>
+      <pre><code>print('Yes' if 5==5 else 'No')
+</code></pre>
+      <p>
+        We get an output of
+        <code>Yes</code>
+        , because 5 is equal to 5, but if we alter the code to:
+      </p>
+      <pre><code>print('Yes' if 5==4 else 'No')
+</code></pre>
+      <p>
+        We get an output of
+        <code>No</code>
+        , because 5 is not equal to 4, obviously.
+      </p>
+      <!-- CONTENT END -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>

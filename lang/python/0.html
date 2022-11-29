@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container2">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Python</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+    <article>
+      <!-- ARTICLE -->
+      <br />
+      <a href="/lang/python.html" class="back">Back</a>
+      <h1>Basic Variables</h1>
+      <p>
+        Variables are key in Python, they keep data saved. Here is how we create
+        variables:
+      </p>
+      <pre><code>variable = contents
+</code></pre>
+      <p>
+        We first declare the variable name, and then add a “=”, then the actual
+        variable contents.
+      </p>
+      <p>
+        Let’s say we want to create a variable called “Number” and add the data
+        “15” to it. We would do:
+      </p>
+      <pre><code>Number = 15
+</code></pre>
+      <p>There we go!</p>
+      <p>Here are some variables that you will need to know:</p>
+      <pre><code>numbervar = 5
+floatvar = 15.3
+stringvar = "Hello, World!"
+booleanvar = True
+listvar = "String", True, 15
+</code></pre>
+      <p>Note that:</p>
+      <p>
+        Number variables can only be numbers
+        <em>
+          <strong>
+            <strong><strong>without</strong></strong>
+          </strong>
+        </em>
+        numbers after the decimal point.
+      </p>
+      <p>
+        Float variables can only be numbers
+        <em>
+          <strong>
+            <strong><strong>with</strong></strong>
+          </strong>
+        </em>
+        numbers after the decimal point.
+      </p>
+      <p>String variables can only be text within quotation marks.</p>
+      <p>
+        Boolean variables can only be True or False, without quotation marks.
+      </p>
+      <p>
+        List variables can be any variables put together, but have to be
+        separated with commas.
+      </p>
+      <h2>Advanced Variables</h2>
+      <h3>Concentation</h3>
+      <p>There are some techniques to add variables together, like so:</p>
+      <pre><code>variable = 'Hello, ' + 'World!'
+</code></pre>
+      <p>
+        Now if we print this variable (print is the command that prints out the
+        content in the brackets), like so:
+      </p>
+      <pre><code>print(variable)
+</code></pre>
+      <p>We get:</p>
+      <pre><code>Hello, World!
+</code></pre>
+      <p>
+        If two variables are the same data type (ex: string and string), we can
+        put them together in two methods.
+      </p>
+      <p>With commas, like so:</p>
+      <pre><code>'Hello, ', 'World!'
+</code></pre>
+      <p>Or with plus signs.</p>
+      <pre><code>'Hello, ' + 'World'
+</code></pre>
+      <p>But we can only use commas if they are different data types.</p>
+      <h3>Complications with numbers</h3>
+      <p>
+        This doesn’t work with numbers though, because using plus signs will add
+        the two numbers together, calculate the sum.
+      </p>
+      <p>Here, like so:</p>
+      <pre><code>5 + 6 # Output of 11
+5, 6 # Output of 56
+</code></pre>
+      <h3>f-string</h3>
+      <p>
+        If I were to ask you to add the number 5 in between the string
+        ‘HelloWorld’, you would most likely do:
+      </p>
+      <pre><code>'Hello', 5, 'World'
+</code></pre>
+      <p>
+        Which would work ( Note that using the + sign wouldn’t work because text
+        and numbers are two different data types), but we can do this more
+        efficiently. Like so:
+      </p>
+      <pre><code>f'Hello{5}World'
+</code></pre>
+      <p>
+        Adding an ‘f’ in front of the quotation marks will turn the string into
+        an f-string. Which allows you to embed variables of any type in between
+        curly brackets in a string.
+      </p>
+
+      <!-- ARTICLE -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>
