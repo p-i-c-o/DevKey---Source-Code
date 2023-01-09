@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container2">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Python</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+
+    <article>
+      <!-- CONTENT BEGIN -->
+      <br />
+      <a href="/lang/python.html" class="back">Back</a>
+      <h1>CONTROL FLOW</h1>
+      <p>
+        We have previously talked about operators, which return either
+        <code>True</code>
+        or
+        <code>False</code>
+        , this is rarely used alone.
+      </p>
+      <p>We use if statement to make decisions in Python, like so:</p>
+      <pre><code>if &lt;condition&gt;:
+ &lt;action&gt;
+</code></pre>
+      <p>
+        The
+        <code>&lt;condition&gt;</code>
+        can either be
+        <code>True</code>
+        or
+        <code>False</code>
+        , we could simply do:
+      </p>
+      <pre><code>if True:
+ &lt;action&gt;
+</code></pre>
+      <p>
+        But that would make it happen every single time, we only want it to
+        happen when it needs to. Let’s create a simple password checker, like
+        so:
+      </p>
+      <pre><code>pswd = input("What's the secret password? ") # Asks for a password
+if pswd == "s3cr3t":                         # Checks if pswd is equal to 's3cr3t'
+ print("That's right!")
+</code></pre>
+      <p>
+        In the
+        <code>&lt;condition&gt;</code>
+        field we can add any comparison (refer to the Operators guide)
+      </p>
+      <p>
+        We can always use a simple
+        <code>if</code>
+        statement, but it’s quite bleak. We can bring this up a notch by using
+        the
+        <code>else</code>
+        statement, here’s how we could use it in the password checker script:
+      </p>
+      <pre><code>pswd = input("What's the secret password? ") # Asks for a password
+if pswd == "s3cr3t":                         # Checks if pswd is equal to 's3cr3t'
+ print("That's right!")
+else:                                        # This runs when the "if" statement is false
+ print('Nope, wrong!')
+</code></pre>
+      <p>
+        There also is
+        <code>elif</code>
+        , here’s an easy way of understanding it.
+      </p>
+      <p>
+        <code>if</code>
+        : Highest priority, always runs first.
+      </p>
+      <p>
+        <code>elif</code>
+        : Second priority, run second only if
+        <code>if</code>
+        returns
+        <code>False</code>
+        .
+      </p>
+      <p>
+        <code>else</code>
+        : Third priority, runs only when everything else returns
+        <code>False</code>
+        .
+      </p>
+      <p>
+        So let’s say in our password checker, there is a secret secret password,
+        one that’ll give us access to everything. We could use
+        <code>elif</code>
+        like so:
+      </p>
+      <pre><code>pswd = input("What's the secret password? ") # Asks for a password
+if pswd == "s3cr3t":                         # Checks if pswd is equal to 's3cr3t'
+ print("That's right!")
+elif pswd == "s3cr3ts3cr3tpassword":         # Checks only if the 'if' statment is wrong.
+ print('Ooh, you found the Super secret password! Nice!')
+else:                                        # This runs when the "if" statement is false
+ print('Nope, wrong!')
+</code></pre>
+      <p>
+        If we used a
+        <code>if</code>
+        statement in both checks, the Python interpreter would check the
+        password for
+        <code>s3cr3t</code>
+        , and then
+        <code>s3cr3ts3cr3tpassword</code>
+        , but by using elif, the interpreter would only check for
+        <code>s3cr3ts3cr3tpassword</code>
+        if the first check resulted falsely.
+      </p>
+      <!-- CONTENT END -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>
