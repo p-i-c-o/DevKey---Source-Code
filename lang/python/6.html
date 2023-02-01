@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container2">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Python</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+
+    <article>
+      <!-- CONTENT BEGIN -->
+      <br />
+      <a href="/lang/python.html" class="back">Back</a>
+      <h1>EXCEPTION HANDLING</h1>
+      <p>
+        We all run into errors when coding, so here you&rsquo;ll learn how to
+        handle them in a way that doesn&rsquo;t crash your code.
+      </p>
+      <p>
+        If we expect an error to occur we can simply just tell the Python
+        interpreter to try something, like so:
+      </p>
+      <pre><code>try:
+  # Code to try
+except:
+  # Run when an error occurs
+      </code></pre>
+      <p>
+        Let&rsquo;s create a very simple code with this outline that we know
+        will return an error:
+      </p>
+      <pre><code>try:
+  print(NonExistantVariable)
+except:
+  print('An error occured')
+      </code></pre>
+      <p>
+        When we run this we get:
+        <code>An error occured</code>
+      </p>
+      <p>
+        This is purely because we haven&rsquo;t defined the
+        <code>NonExistantVariable</code>
+        variable. If we had run this code simply like this:
+      </p>
+      <pre><code>print(NonExistantVariable)
+      </code></pre>
+      <p>We would get:</p>
+      <pre><code>Traceback (most recent call last):
+  File "&lt;string&gt;", line 1, in &lt;module&gt;
+NameError: name 'NonExistantVariable' is not defined
+      </code></pre>
+      <p>
+        Another cool trick with this, we can add a specific argument to the
+        <code>except</code>
+        statement. Like so:
+      </p>
+      <pre><code>try:
+  print(NonExistantVariable)
+except NameError:
+  print('An error occured')
+      </code></pre>
+      <p>
+        This will only run that code if it receives a
+        <code>NameError</code>
+        error, otherwise, it&rsquo;ll just give us the regular error message.
+        Having an
+        <code>except</code>
+        statement set up to catch errors will handle them then move on in the
+        script, whereas not having them will cause the error to stop the script
+        all together.
+      </p>
+      <p>
+        Ok, so now we understand the basics. Let&rsquo;s move on to the
+        <code>else</code>
+        statement. Similarly to the standard if/else statements, we can add an
+        <code>else</code>
+        statement to an
+        <code>except</code>
+        statement.
+      </p>
+      <pre><code>try:
+  print(NonExistantVariable)
+except:
+  print('An error occured')
+else:
+  print("This will run when the except statement doesn't run")
+      </code></pre>
+      <p>
+        As mentioned in the code, the
+        <code>else</code>
+        statement only runs when the except statement doesn&rsquo;t run.
+      </p>
+      <p>
+        Finally, we can use the
+        <code>finally</code>
+        statement to end it all, this will run at the end of the whole code
+        block, and it is always executed.
+      </p>
+      <pre><code>try:
+  print(NonExistantVariable)
+except:
+  print('An error occured')
+else:
+  print("This will run when the except statement doesn't run")
+finally:
+  print('This will always run')
+      </code></pre>
+      <p>All done! Now you know how to handle exceptions.</p>
+      <!-- CONTENT END -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>
