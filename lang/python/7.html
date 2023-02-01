@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container2">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="/img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Python</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+
+    <article>
+      <!-- CONTENT BEGIN -->
+      <br />
+      <a href="/lang/python.html" class="back">Back</a>
+      <h1>FILE HANDLING</h1>
+      <p>
+        File handling is essential to data management scripts. Having variables
+        saved in the script itself works, but doesn&rsquo;t provide a whole lot
+        of flexibility. The base function for file handling is:
+      </p>
+      <pre><code>&lt;varname&gt; = open(&lt;filename&gt;, &lt;mode&gt;)</code></pre>
+      <p>
+        Let&rsquo;s say we have a file named
+        <code>msg.txt</code>
+        and it contains:
+      </p>
+      <pre><code>Hello,
+Is the meeting scheduled for 15:00 or 16:00?
+See you soon,
+Micheal</code></pre>
+      <p>To open it, we would use:</p>
+      <pre><code>fil = open('msg.txt', &lt;mode&gt;)</code></pre>
+      <p>Let&rsquo;s discuss the different modes,</p>
+      <ol>
+        <li>
+          <strong>r:</strong>
+          &nbsp;open an existing file for a read operation.
+        </li>
+        <li>
+          <strong>w:</strong>
+          &nbsp;open an existing file for a write operation. If the file already
+          contains some data then it will be overridden but if the file is not
+          present then it creates the file as well.
+        </li>
+        <li>
+          <strong>a:</strong>
+          &nbsp;open an existing file for append operation. It won&rsquo;t
+          override existing data.
+        </li>
+        <li>
+          <strong>r+:</strong>
+          &nbsp;To read and write data into the file. The previous data in the
+          file will be overridden.
+        </li>
+        <li>
+          <strong>w+:</strong>
+          &nbsp;To write and read data. It will override existing data.
+        </li>
+        <li>
+          <strong>a+:</strong>
+          &nbsp;To append and read data from the file. It won&rsquo;t override
+          existing data.
+        </li>
+      </ol>
+      <h2>read</h2>
+      <p>
+        The
+        <code>r</code>
+        function can be used to read a file, like so:
+      </p>
+      <pre><code>fil = open('msg.txt', 'r')
+print(fil.read())
+# We get:
+# Hello,
+# Is the meeting scheduled for 15:00 or 16:00?
+#
+# See you soon,
+# Micheal</code></pre>
+      <p><em>Remember to keep the mode in quotation marks.</em></p>
+      <p>
+        The read function is super basic, and really only is used for one time
+        reading. However it works very well in this use-case.
+      </p>
+      <h2>write</h2>
+      <p>
+        The write function is practically the same as the
+        <code>read</code>
+        function, but only works to write, not read.
+      </p>
+      <p>
+        <strong>
+          BE CAREFUL, the following function will
+          <em><strong>overwrite</strong></em>
+          your file.
+        </strong>
+      </p>
+      <pre><code>fil = open('msg.txt', 'w')
+fil.write('Hello DevKey!')
+# The file will now read:
+# Hello DevKey!</code></pre>
+      <p>
+        To end this function, it is recommended that you
+        <strong>
+          <strong><strong>close</strong></strong>
+        </strong>
+        your file after editing it, like so:
+      </p>
+      <pre><code>fil = open('msg.txt', 'w')
+fil.write('Hello DevKey!')
+file.close() # This terminates the resources that are managing the file</code></pre>
+      <h2>append</h2>
+      <p>
+        The append mode is similar to the
+        <code>write</code>
+        function, but instead of
+        <em>
+          <strong>
+            <strong>
+              <strong>
+                <strong><strong>overwriting</strong></strong>
+              </strong>
+            </strong>
+          </strong>
+        </em>
+        it just adds text to a file.
+      </p>
+      <p>Below is an example script:</p>
+      <pre><code>fil = open('msg.txt', 'a')
+fil.write("Helllo DevKey")
+fil.close()
+# The file now reads:
+# Hello,
+# Is the meeting scheduled for 15:00 or 16:00?
+#
+# See you soon,
+# Micheal
+# Hello DevKey!</code></pre>
+      <p>
+        We&rsquo;ve now covered the basic modes, but the other modes (which are
+        the basic ones, but more advanced) simply add the ability to do the
+        opposite of the mode without having to open the file file again in a
+        different mode.
+      </p>
+      <p>
+        Most of the scripts above can be simplified for readability so that this
+        script:
+      </p>
+      <pre><code>fil = open('msg.txt', 'w')
+fil.write('Hello DevKey!')
+file.close() # This terminates the resources that are managing the file</code></pre>
+      <p>Would turn into this script:</p>
+      <pre><code>with open('msg.txt', 'w') as fil:
+  fil.write('Hello DevKey!')
+  fil.close()</code></pre>
+      <!-- CONTENT END -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>
