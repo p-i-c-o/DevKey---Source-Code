@@ -24,7 +24,13 @@ p,
 ul,
 li,
 .pagelink,
+a,
 .link {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+a:after {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
