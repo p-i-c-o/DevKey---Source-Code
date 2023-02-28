@@ -50,8 +50,7 @@
       <pre><code>try:
   # Code to try
 except:
-  # Run when an error occurs
-      </code></pre>
+  # Run when an error occurs</code></pre>
       <p>
         Let&rsquo;s create a very simple code with this outline that we know
         will return an error:
@@ -59,8 +58,7 @@ except:
       <pre><code>try:
   print(NonExistantVariable)
 except:
-  print('An error occured')
-      </code></pre>
+  print('An error occured')</code></pre>
       <p>
         When we run this we get:
         <code>An error occured</code>
@@ -70,13 +68,11 @@ except:
         <code>NonExistantVariable</code>
         variable. If we had run this code simply like this:
       </p>
-      <pre><code>print(NonExistantVariable)
-      </code></pre>
+      <pre><code>print(NonExistantVariable)</code></pre>
       <p>We would get:</p>
       <pre><code>Traceback (most recent call last):
   File "&lt;string&gt;", line 1, in &lt;module&gt;
-NameError: name 'NonExistantVariable' is not defined
-      </code></pre>
+NameError: name 'NonExistantVariable' is not defined</code></pre>
       <p>
         Another cool trick with this, we can add a specific argument to the
         <code>except</code>
@@ -85,8 +81,7 @@ NameError: name 'NonExistantVariable' is not defined
       <pre><code>try:
   print(NonExistantVariable)
 except NameError:
-  print('An error occured')
-      </code></pre>
+  print('An error occured')</code></pre>
       <p>
         This will only run that code if it receives a
         <code>NameError</code>
@@ -111,8 +106,7 @@ except NameError:
 except:
   print('An error occured')
 else:
-  print("This will run when the except statement doesn't run")
-      </code></pre>
+  print("This will run when the except statement doesn't run")</code></pre>
       <p>
         As mentioned in the code, the
         <code>else</code>
@@ -131,8 +125,7 @@ except:
 else:
   print("This will run when the except statement doesn't run")
 finally:
-  print('This will always run')
-      </code></pre>
+  print('This will always run')</code></pre>
       <p>All done! Now you know how to handle exceptions.</p>
       <!-- CONTENT END -->
     </article>

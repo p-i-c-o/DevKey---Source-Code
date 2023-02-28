@@ -262,3 +262,27 @@ left-logo {
   align-self: auto;
   order: 0;
 }
+
+.subtextform {
+  font-size: 10px;
+  color: red;
+  font-style: italic;
+}
+.submitbutton {
+  border: 3px solid rgb(84, 84, 84);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(60, 60, 60);
+}
+.submitinput {
+  border: 3px solid rgb(84, 84, 84);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(60, 60, 60);
+}

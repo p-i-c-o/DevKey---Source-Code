@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKey</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo-square.png" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container">
+        <div class="flex-items">
+          <img
+            class="logo"
+            src="img/logo-square.png"
+            alt="Coder's Lair Logo"
+            width="100"
+          />
+        </div>
+        <div class="flex-items"><h1 class="h1">Submit</h1></div>
+      </div>
+      <div class="flex-container">
+        <a href="/index.html" class="link">Home</a>
+        <a href="/projects.html" class="link">Projects</a>
+        <a href="/lang/python.html" class="link">Python</a>
+        <a href="/lang/bash.html" class="link">Bash</a>
+        <a href="/lang/html.html" class="link">HTML</a>
+        <a href="/lang/css.html" class="link">CSS</a>
+      </div>
+      <br />
+      <br />
+      <!-- Page Buttons -->
+    </header>
+    <article>
+      <!-- CONTENT BEGIN -->
+      <h1>Submit New Code</h1>
+      <p>Here you can submit your code to our website!</p>
+      <h3>Requirements</h3>
+      <ol>
+        <li>Formatted in MarkDown</li>
+        <li>Well exlained</li>
+        <li>Fluent Written English</li>
+        <li>No sensetive topics</li>
+      </ol>
+      
+      <form
+        action="https://formspree.io/f/xgebyolg" method="POST" > <label>
+          <p>Your email address:</p>
+          <input type="email" name="email" placeholder="Email Address" size="30" class="submitinput">
+        </label>
+        <br>
+        <label>
+          <p>GitHub:</p>
+          <input name="message" placeholder="username/repo" size="30" class="submitinput"></input>
+        </label>
+        <br>
+        <label>
+          <p>Display Name (this will be shown on your code)</p>
+          <input name="displayname" placeholder="Display Name" size="30" class="submitinput"></input>
+        </label>
+        <br>
+        <br>
+        <button type="submit" class="submitbutton">Submit</button>
+      </form>
+      
+      
+      <p>We will email you wether or not your code was accepted! Good luck!</p>
+      <!-- CONTENT END -->
+    </article>
+    <footer>
+      <p>
+        <strong>Discord:</strong>
+        AN7#8915
+      </p>
+      <p>
+        <strong>Email:</strong>
+        ant@devkey.ch
+      </p>
+    </footer>
+  </body>
+</html>
