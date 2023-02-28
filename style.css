@@ -286,3 +286,20 @@ left-logo {
   text-decoration: none;
   background-color: rgb(60, 60, 60);
 }
+
+.sublink {
+  border: 3px solid rgb(84, 84, 84);
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.sublink:hover {
+  border: 3px solid rgb(84, 84, 84);
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(84, 84, 84);
+}
